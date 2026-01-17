@@ -1953,7 +1953,7 @@ input, select, textarea {
 #background .education li {
     line-height: 1.3em;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 
@@ -2550,6 +2550,22 @@ input, select, textarea {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
+	
+	  /* Intro section only */
+  #top .intro-flex {
+    flex-direction: column;
+    margin-top: 0;          /* undo negative margin on mobile */
+    gap: 1.5em;
+  }
+
+  #top .intro-flex .image.featured {
+    justify-content: center; /* center image when stacked */
+  }
+
+  #top .intro-flex .image.featured img {
+    width: 100%;            /* full-width image on mobile */
+    max-width: 350px;       /* optional cap for aesthetics */
+  }
 
 		/* Basic */
 
